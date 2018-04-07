@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,53 @@
     <style>
         /* 这种方法有一个非常明显的好处就是不必提前知道被居中元素的尺寸了，因为transform中
         translate偏移的百分比就是相对于元素自身的尺寸而言的。 */
+        
         #box {
             width: 300px;
             height: 300px;
             background: #ddd;
             position: relative;
         }
-        #child{
+        
+        #child {
             width: 50%;
             height: 30%;
             background: pink;
             position: absolute;
             top: 50%;
-            margin:-15% 0 0 0;
+            margin: -15% 0 0 0;
             display: table-cell;
             vertical-align: middle;
         }
-        .container{
-            width: 500px;
-            height: 80px;
-            background: #c2300b;
-            margin-left: 50px;
-            padding-top: 10px;
-            text-align: center;
+        
+        #vc {
+            display: table;
+            background-color: #c2300b;
+            height: 100px;
+            overflow: hidden;
         }
-        .center a{
-            float: left;
-            border: 1px solid #fff;
-            padding: 5px 10px ;
-            margin: 10px;
-            color: #fff;
-            text-decoration: none;
+        
+        #vci {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            top: 50%;
         }
     </style>
 </head>
+
 <body>
     <div id="box">
         <div id="child">我也是个测试DIV</div>
     </div>
-    <div class="container">
-        <div class="center">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-        </div>
-        <div style="clear: both"></div>
-    </div>
+
 </body>
+<div id="vc">
+    <div id="vci">
+        <div id="content">
+            我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了
+        </div>
+    </div>
+</div>
+
 </html>
