@@ -14,17 +14,45 @@
             background: #ddd;
             position: relative;
         }
-        #child {
-            background: orange;
+        #child{
+            width: 50%;
+            height: 30%;
+            background: pink;
             position: absolute;
             top: 50%;
-            transform: translate(0,-50%);
+            margin:-15% 0 0 0;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .container{
+            width: 500px;
+            height: 80px;
+            background: #c2300b;
+            margin-left: 50px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .center a{
+            float: left;
+            border: 1px solid #fff;
+            padding: 5px 10px ;
+            margin: 10px;
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div id="box">
-        <div id="child">我是一串很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长的文本</div>
+        <div id="child">我也是个测试DIV</div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+        <div style="clear: both"></div>
     </div>
 </body>
 </html>
