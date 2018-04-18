@@ -41,6 +41,27 @@
             vertical-align: middle;
             top: 50%;
         }
+        
+        #wrapper {
+            height: 30%;
+            width: 100%;
+            background: chartreuse;
+        }
+        
+        .cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 240px;
+            height: 180px;
+            border: 1px solid #666;
+        }
+        
+        .wrapper {
+            display: table;
+            border: 1px solid red;
+            height: 300px;
+        }
     </style>
 </head>
 
@@ -48,14 +69,26 @@
     <div id="box">
         <div id="child">我也是个测试DIV</div>
     </div>
-
-</body>
-<div id="vc">
-    <div id="vci">
-        <div id="content">
-            我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了
+    <div id="vc">
+        <div id="vci">
+            <div id="content">
+                我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了我们垂直居中了，我们水平居中了
+            </div>
         </div>
     </div>
-</div>
+    <div class="cell">
+        <p>我爱你</p>
+    </div>
+    <div class="cell">
+        <!-- <p>我爱你</p>
+            <p>亲爱的中国</p> -->
+        <div style="width: 100px;height:50px;border: 1px solid #ccc; display:inline-block;">
+            div(inline-block)
+        </div>
+    </div>
+
+
+</body>
+
 
 </html>
